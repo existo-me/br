@@ -1,2 +1,8 @@
-# br.existo.me
-GitHub Pages for hosting the Brazilian version of the Existo.me political quiz.
+# BR.Existo.me
+
+GitHub Pages for hosting the website **Existo.me** with the Brazilian version of the political spectrum test.
+
+
+<br /><hr /><br />
+
+![Repository Banner](/assets/repo-banner.jpg)
