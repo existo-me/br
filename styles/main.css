@@ -9,15 +9,15 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Jost, Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 
 /*** HEADER + FOOTER ***/
 header {
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 40;
 }
 
 footer {
@@ -25,7 +25,6 @@ footer {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    z-index: 40;
 }
 
 .nav-top {
@@ -71,6 +70,38 @@ footer {
     font-size: 1rem;
 }
 
+/*** CAROUSEL ***/
+.vermelho { background-color: red; }
+.azul { background-color: blue; }
+.laranja { background-color: orange; }
+.cinza { background-color: #BBBBBB; }
+.verde { background-color: green; }
+.amarelo { background-color: yellow; }
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 30;
+}
+@media (orientation: portrait) {
+    .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-control-next .carousel-control-next-icon {
+        display: none;
+    }
+}
+@media (orientation: landscape) {
+    .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-control-next .carousel-control-next-icon {
+        border-radius: 3rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .carousel-control-prev .carousel-control-prev-icon:hover,
+    .carousel-control-next .carousel-control-next-icon:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
 /*** MODAL DIALOG ***/
 .modal .modal-content .modal-header h4 {
     color: #366b7f;
@@ -91,39 +122,24 @@ footer {
     font-size: 1rem;
 }
 
-/*** CAROUSEL ***/
-.carousel-control-next,
-.carousel-control-prev {
-    z-index: 30;
-}
-
-.carousel-control-prev .carousel-control-prev-icon,
-.carousel-control-next .carousel-control-next-icon {
-    border-radius: 3rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.carousel-control-prev .carousel-control-prev-icon:hover,
-.carousel-control-next .carousel-control-next-icon:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/*** TOASTS ***/
+.toast-header,
+.toast-body {
+    color: black;
 }
 
 /*** UNITED SAPIENS' CLAMOR ***/
 article {
-    left: 0;
+/*    left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
     object-fit: fill;
     z-index: 10;
+    background-position: 0 0;*/
 
-    background-position: 0 0;
-    background-size: 100% 100%; /* cover */
-    background-clip: padding-box; /* content-box */
-    background-origin: padding-box;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 50vh;
+
 }
 
 article section.clamor {
