@@ -110,7 +110,7 @@
     </head>
 
     <!-- Website Content -->
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <header class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-2">
             <div class="col-md-4 d-flex caption">
                 <a id="aboutModalLabel" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal" title="Clique para saber mais sobre este website">
@@ -125,40 +125,22 @@
         </header>
 
         <!-- Pages as Tab panes -->
-        <div class="container tab-content">
+        <main class="container-fluid flex-fill tab-content vermelho">
             <!-- Home -->
-            <div class="container d-flex flex-column min-vh-100 tab-pane fade show active vermelho">
-                <div class="row d-flex verde">
-                    ok
-                </div>
-
-                <div id="carouselFlag" class="row d-flex flex-fill carousel slide laranja" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="200000">
-                            ok
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFlag" data-bs-slide="prev" title="Previous Country">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFlag" data-bs-slide="next" title="Next Country">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+            <section class="container tab-pane fade show active verde">
+                ok 1
+            </section>
 
             <!-- Test -->
-            <div class="container d-flex flex-column min-vh-100 tab-pane fade">
-                ok asdfadfs
-            </div>
+            <section class="container tab-pane fade">
+                ok 2
+            </section>
 
             <!-- Result -->
-            <div class="container d-flex flex-column min-vh-100 tab-pane fade">
-                ok asdfadfs
-            </div>
-        </div>
+            <section class="container tab-pane fade">
+                ok 3
+            </section>
+        </main>
 
         <footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-2">
             <div class="col-md-4 d-flex caption">
@@ -177,16 +159,16 @@
                     <a href="https://www.instagram.com/united_sapiens" title="Fale comigo no Instagram" target="_blank"><i class="fa-brands fa-instagram icon-social" role="img" aria-label="Fale comigo no Instagram"></i></a>
                 </li>
                 <li class="ms-3 caption">
-                    <a href="https://www.linkedin.com/company/united-sapiens" title="Página da organização no LinkedIn" target="_blank"><i class="fa-brands fa-linkedin icon-social" role="img" aria-label="Página da Organização no LinkedIn"></i></a>
+                    <a href="https://www.youtube.com/channel/UC_P9YRTAJArvjE-68gPVfYg" title="Fale comigo no YouTube" target="_blank"><i class="fa-brands fa-youtube icon-social" role="img" aria-label="Fale comigo no YouTube"></i></a>
                 </li>
                 <li class="ms-3 caption">
-                    <a href="https://github.com/United-Sapiens" title="Página da organização no GitHub" target="_blank"><i class="fa-brands fa-github icon-social" role="img" aria-label="Página da Organização no GitHub"></i></a>
+                    <a href="https://www.linkedin.com/company/united-sapiens" title="Fale comigo no LinkedIn" target="_blank"><i class="fa-brands fa-linkedin icon-social" role="img" aria-label="Fale comigo no LinkedIn"></i></a>
                 </li>
             </ul>
         </footer>
 
         <!-- Toast: Carousel Navigation Instructions -->
-        <div class="position-fixed top-0 end-0 p-2" style="z-index: 50">
+        <div class="position-fixed top-0 end-0 p-2 fade" style="z-index: 50">
             <div id="navigationToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <i class="fa-solid fa-circle-chevron-left"></i> &nbsp; &nbsp; <i class="fa-solid fa-circle-chevron-right"></i> &nbsp; &nbsp; <strong class="me-auto">Navegação</strong>
